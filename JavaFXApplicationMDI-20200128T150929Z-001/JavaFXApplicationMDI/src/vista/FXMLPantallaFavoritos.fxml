@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLPantallaFavoritosController">
+   <children>
+      <Button fx:id="favoritos" layoutX="215.0" layoutY="331.0" mnemonicParsing="false" onAction="#crearInforme" prefHeight="25.0" prefWidth="170.0" text="Informe de favoritos" />
+      <TableView fx:id="tablafavoritos" layoutX="54.0" layoutY="149.0" prefHeight="164.0" prefWidth="521.0" />
+      <Label layoutX="129.0" layoutY="27.0" prefHeight="53.0" prefWidth="396.0" text="Pantalla de Favoritos">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="error" layoutX="54.0" layoutY="105.0" prefHeight="32.0" prefWidth="456.0" text="Necesita hacer login para ver estas opciones" textAlignment="CENTER" textFill="#ee1919" AnchorPane.leftAnchor="54.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="minombre" layoutX="227.0" layoutY="88.0" prefHeight="17.0" prefWidth="108.0" />
+   </children>
+</AnchorPane>

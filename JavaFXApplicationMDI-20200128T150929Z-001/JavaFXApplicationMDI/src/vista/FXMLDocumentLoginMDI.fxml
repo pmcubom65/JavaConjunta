@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="295.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLDocumentLoginMDIController">
+   <children>
+      <Label layoutX="67.0" layoutY="127.0" text="Usuario:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="169.0" text="Contraseña:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="is_usuario" layoutX="150.0" layoutY="125.0" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="125.0" />
+      <Label layoutX="90.0" layoutY="41.0" text="Iniciar sesión">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Button id="IS_INICIAR" fx:id="btn_iniciarsesion" layoutX="228.0" layoutY="251.0" mnemonicParsing="false" onAction="#onClick" text="Iniciar sesión" />
+      <PasswordField fx:id="is_contraseña" layoutX="154.0" layoutY="167.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.DetalleseventosController">
+   <children>
+      <Label fx:id="labeltodos" alignment="CENTER" layoutX="356.0" layoutY="14.0" text="Detalles del evento" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-1.0" layoutY="53.0" prefHeight="11.0" prefWidth="917.0" />
+      <Button fx:id="btn_favoritos" layoutX="365.0" layoutY="393.0" mnemonicParsing="false" onAction="#aniadirFavorito" prefHeight="35.0" prefWidth="110.0" text="Añadir a favoritos" />
+      <Label layoutX="24.0" layoutY="108.0" text="Nombre del evento:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="167.0" text="Fecha del evento:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textNombre" editable="false" layoutX="365.0" layoutY="109.0" prefHeight="25.0" prefWidth="347.0" />
+      <TextField fx:id="textFecha" editable="false" layoutX="365.0" layoutY="168.0" prefHeight="25.0" prefWidth="347.0" />
+      <Label layoutX="24.0" layoutY="234.0" prefHeight="27.0" prefWidth="139.0" text="Lugar del evento:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textLugar" editable="false" layoutX="365.0" layoutY="235.0" prefHeight="25.0" prefWidth="347.0" />
+      <Label layoutX="24.0" layoutY="302.0" text="Precio:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textPrecio" editable="false" layoutX="365.0" layoutY="303.0" prefHeight="25.0" prefWidth="347.0" />
+      <Button fx:id="compra" layoutX="573.0" layoutY="395.0" mnemonicParsing="false" onAction="#abrirVentanaCompra" prefHeight="31.0" prefWidth="139.0" text="Comprar evento" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="505.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLPurchasesController">
+   <children>
+      <Label layoutX="35.0" layoutY="106.0" text="Nombre">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="161.0" text="E-mail">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="263.0" text="Metodo de pago">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="326.0" text="Direccion">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="384.0" text="CP">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnConfirmar" layoutX="212.0" layoutY="456.0" mnemonicParsing="false" onAction="#imprimirInforme" prefHeight="35.0" prefWidth="88.0" text="Confirmar" />
+      <TextField fx:id="txtNombre" layoutX="226.0" layoutY="111.0" prefHeight="25.0" prefWidth="227.0" />
+      <TextField fx:id="txtEmail" layoutX="226.0" layoutY="166.0" prefHeight="25.0" prefWidth="227.0" />
+      <TextField fx:id="txtDireccion" layoutX="226.0" layoutY="331.0" prefHeight="25.0" prefWidth="245.0" />
+      <TextField fx:id="txtCP" layoutX="226.0" layoutY="389.0" prefHeight="25.0" prefWidth="100.0" />
+      <ChoiceBox fx:id="cbMetodos" layoutX="265.0" layoutY="268.0" prefWidth="150.0" />
+      <Label layoutX="31.0" layoutY="218.0" text="NIF">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNIF" layoutX="226.0" layoutY="223.0" prefHeight="25.0" prefWidth="227.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="1003.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VideosController">
+   <children>
+      <Pane fx:id="contenedor" layoutX="2.0" layoutY="2.0" prefHeight="548.0" prefWidth="1003.0">
+         <children>
+            <Button fx:id="btnCargar" layoutX="620.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#cargarVideos" text="Buscar" />
+            <Label alignment="CENTER_RIGHT" layoutX="331.0" layoutY="18.0" prefHeight="17.0" prefWidth="142.0" text="Lista de grupos:" />
+            <ListView fx:id="listaVideos" layoutY="45.0" prefHeight="123.0" prefWidth="997.0" />
+            <WebView fx:id="webVideo" layoutX="160.0" layoutY="170.0" prefHeight="376.0" prefWidth="683.0" />
+            <MenuButton fx:id="listaGrupos" layoutX="502.0" layoutY="14.0" mnemonicParsing="false" text="Elige un grupo" />
+         </children></Pane>
+   </children>
+</AnchorPane>
