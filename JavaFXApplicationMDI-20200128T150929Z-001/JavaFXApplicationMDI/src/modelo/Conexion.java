@@ -14,7 +14,7 @@ public class Conexion {
     public Connection obtenerConexion() {
        // String basededatos = "sql7315953";
        //String basededatos = "gestion_festival";
-        String basededatos="s163c766_gestion_festival";
+    //    String basededatos="s163c766_gestion_festival";
        
        
        //String usuario = "root";
@@ -22,9 +22,12 @@ public class Conexion {
         //String password = "";
        //String password = "Segundodam";
         
-       String usuario="s163c766_alumno";
-        String password="alumno1dam";
-             
+   //    String usuario="s163c766_alumno";
+    //    String password="alumno1dam";
+                 String basededatos="gestion_festival";
+          
+       String usuario="root";
+        String password="";       
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -50,7 +53,8 @@ public class Conexion {
     }
     
     public ResultSet selectEventosPropios(Connection conect) throws SQLException{
-            String sql = "SELECT * FROM t_event where id_users_events="+variableGlobal.id_active;
+     //       String sql = "SELECT * FROM t_event where id_users_events="+variableGlobal.id_active;
+     String sql = "SELECT * FROM t_event where id_users_events="+1;
             Statement stm = conect.createStatement();
             ResultSet rs = stm.executeQuery(sql);
             return rs;

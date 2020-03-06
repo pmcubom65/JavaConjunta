@@ -71,7 +71,7 @@ public class GenerarInformeFavoritos {
 
 
             JasperPrint print
-                    = JasperFillManager.fillReport(GenerarInformeFavoritos.class.getResourceAsStream("/informes/inf_evento_favorito.jasper"),
+                    = JasperFillManager.fillReport(GenerarInformeFavoritos.class.getResourceAsStream("inf_evento_favorito.jasper"),
                             map, fuenteDeDatos);
 //Visualizamos el visor con el informe y los datos formateados.
             JasperViewer.viewReport(print, false);
